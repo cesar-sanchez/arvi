@@ -8,4 +8,4 @@ all: ${ALL}
 
 clean:
 	rm -f ${NAME}.snm ${NAME}.nav ${NAME}.log ${NAME}.out ${NAME}.snm \
-		${NAME}.toc ${NAME}.aux
+		${NAME}.toc ${NAME}.aux ${NAME}.fdb_latexmk ${NAME}.synctex.gz ${NAME}.fls
