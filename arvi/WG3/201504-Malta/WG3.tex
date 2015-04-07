@@ -323,7 +323,7 @@ To achieve the overall aim, the main objectives are:
 
 \begin{frame}
   \frametitle{Embedded Debugging}
-
+  \framesubtitle{Topics for discussion}
 
 When an embedded software is tested in the deployed platform, the
 engineers cannot use an interactive debugger to debug errors. 
@@ -353,43 +353,51 @@ significantly
 \begin{frame}
   \frametitle{Concurrency}
 
-- Coordination (wait/notify) is least explored area. (No tools, even research tools.)
+\begin{itemize}
 
-- Which properties can you observe locally? 
+\item Coordination (wait/notify) is least explored area. (No tools, even research tools.)
 
-- Deadlock detection cannot be monitored locally?
+\item Which properties can you observe locally? 
 
-- Prove statically that some global property follows from a bunch of local properties (assumptions), and you can monitor those local properties at runtime.
+\item Deadlock detection cannot be monitored locally?
 
-- How do you learn a context-specific behavior of a component in a disributed system?
+\item Prove statically that some global property follows from a bunch of local properties (assumptions), and you can monitor those local properties at runtime.
 
-- Determinism can be more abstract and expressive than absence of deadlocks.
+\item How do you learn a context-specific behavior of a component in a disributed system?
 
-- Use rely-guarantee techniques at runtime to make monitoring more composition
+\item Determinism can be more abstract and expressive than absence of deadlocks.
+
+\item Use rely-guarantee techniques at runtime to make monitoring more composition
+
+\end{itemize}
 
 \end{frame}
 
 \begin{frame}
-  \frametitle{Distributed systems}
+  \frametitle{Challenges for distributed systems}
 
-- Modularity, partial static analysis, updates on components.
+\begin{itemize}
 
-- Contracts: with run-time checks we can have more permissive contracts
+\item Modularity, partial static analysis, updates on components.
+
+\item Contracts: with run-time checks we can have more permissive contracts
   between components.
 
-- Analyze contracts incrementally.
+\item Analyze contracts incrementally.
 
-- Need to constrain design of systems to provide guarantees.
+\item Need to constrain design of systems to provide guarantees.
 
-- Current systems produce much data/logs but still forencics cannot find
+\item Current systems produce much data/logs but still forencics cannot find
   root cause of some failures.
 
-- Use static analysis to enhance effectiveness of monitors.
+\item Use static analysis to enhance effectiveness of monitors.
 
-- Need specific assumptions on system design/implementation for verification.
+\item Need specific assumptions on system design/implementation for verification.
 
-- Challenge: distributed systems, each component has a monitor but monitor
+\item Challenge: distributed systems, each component has a monitor but monitor
   is not reliable. How we can identify misbehaving processes?
+
+\end{itemize}
 
 \end{frame}
 
