@@ -128,8 +128,6 @@ To achieve the overall aim, the main objectives are:
 \begin{frame} 
   \frametitle{WG3 Objectives}
   
-  From MoU: \textbf{D.2 Scientific work plan methods and means} \\[2em]
-  
   The objectives of this Working Group will be to identify the
   challenges for monitoring in the following application domains:
   \begin{itemize}
@@ -145,11 +143,15 @@ To achieve the overall aim, the main objectives are:
   \end{itemize}
   These areas involve expertise from more than one domain and have a
   much higher chance of success if attacked cooperatively.
+
+  \bigskip
+
+  {\small (From MoU: \textbf{D.2 Scientific work plan methods and means})}
+  
 \end{frame}
 
 \begin{frame}
   \frametitle{WG3 Output}
-  From MoU: \textbf{D.2 Scientific work plan methods and means}\\[2em]
 
   The \alert{concrete outputs} of WG3:
   \begin{itemize}
@@ -164,14 +166,17 @@ To achieve the overall aim, the main objectives are:
     show the feasibility and general applicability of runtime
     verification techniques.
   \end{itemize}
+
+  \bigskip
+
+  {\small (From MoU: \textbf{D.2 Scientific work plan methods and means})}
+  
 \end{frame}
 
 \begin{frame}
   \frametitle{WG3 Milestones}
 
-  From MoU: \textbf{E.1 Coordination and organisation}\\[2em]
-
-  \textbf{Milestones}\\[2em]
+%  \textbf{Milestones}\\[2em]
   
 \begin{itemize}
 \item M1 (end of Year 1): First Annual Report of the Action. Proposals
@@ -185,6 +190,12 @@ To achieve the overall aim, the main objectives are:
   monitoring hardware and application domains, including medical
   devices.
 \end{itemize}
+
+\bigskip
+
+  {\small (From MoU: \textbf{E.1 Coordination and organisation})}
+
+
 
 \end{frame}
 
@@ -326,9 +337,11 @@ To achieve the overall aim, the main objectives are:
   \framesubtitle{Topics for discussion}
 
 When an embedded software is tested in the deployed platform, the
-engineers cannot use an interactive debugger to debug errors. 
+engineers cannot use an interactive debugger. 
 
-An alternative is to produce logs to later analyze them.
+An alternative is to produce logs to later analyze them. 
+
+However, 
 \begin{itemize} 
 \item the modifications in the program must be minimal (to prevent changes in
 the timings) 
@@ -337,15 +350,13 @@ the timings)
 maybe unfeasible because large storages are typically not available. 
 \end{itemize}
 
-To offer the debugging engineer a language to
+Can we offer the debugging engineer a language to
 express interesting error trace descriptions (an RV language) which
-must then be used to modify the code for which static analysis is
-crucial to provide efficiency. 
+must then be used to modify the code? 
 
-There is an evidence that
-instrumented code uffered a slowdown of orders of magnitude, and
-then code was statically analyzed to alleviate this slowdown
-significantly 
+
+Instrumented code often suffers a slowdown of orders of magnitude. 
+The slowdown may be significantly alleviated through static analysis.
 
 \end{frame}
 
@@ -355,11 +366,11 @@ significantly
 
 \begin{itemize}
 
-\item Coordination (wait/notify) is least explored area. (No tools, even research tools.)
+\item Coordination (wait/notify) is least explored area. 
 
 \item Which properties can you observe locally? 
 
-\item Deadlock detection cannot be monitored locally?
+%\item Deadlock detection cannot be monitored locally?
 
 \item Prove statically that some global property follows from a bunch of local properties (assumptions), and you can monitor those local properties at runtime.
 
@@ -367,7 +378,7 @@ significantly
 
 \item Determinism can be more abstract and expressive than absence of deadlocks.
 
-\item Use rely-guarantee techniques at runtime to make monitoring more composition
+\item Can we use rely-guarantee techniques at runtime to make monitoring more composition?
 
 \end{itemize}
 
@@ -394,8 +405,8 @@ significantly
 
 \item Need specific assumptions on system design/implementation for verification.
 
-\item Challenge: distributed systems, each component has a monitor but monitor
-  is not reliable. How we can identify misbehaving processes?
+\item Each component has a monitor but monitor
+  may not be reliable. How can we identify misbehaving processes?
 
 \end{itemize}
 
